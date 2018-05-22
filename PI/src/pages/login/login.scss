@@ -1,0 +1,37 @@
+page-login {
+    ion-content{
+            background: #C9F1FD !important;
+            img{
+                margin:auto;
+                display:block;
+                width: 100px;
+                height:auto;
+                }
+        }
+        p{
+            text-align: center;      
+        }
+        h1{
+        text-align: center;
+        font-size:15px;
+        font-weight: bold;
+        }
+        .teste{
+            width: 100px;
+        }
+        .botao{
+            padding-top:20px;
+        }
+        button.btn{
+            margin: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 9px;
+            font-size: 15px;
+            font-weight:bold;
+            color:#FFF;
+        }
+        .item{
+            background: #C9F1FD;
+        }
+}

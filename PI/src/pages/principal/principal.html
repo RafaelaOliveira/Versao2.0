@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Localização</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-list>
+ 
+    <ion-item>
+      <ion-label>Para onde deseja ir?</ion-label>
+      <ion-input type="text" [(ngModel)]="destinationPosition"></ion-input>
+    </ion-item>
+ 
+    <div padding>
+      <button ion-button (click)="calculateRoute()">Traçar rota</button>
+    </div>
+  </ion-list>
+ 
+  <div #map id="map"></div>
+  <br>
+  <div>
+    <ion-item>
+      <h1 text-center>{{displayTime}}</h1>
+    </ion-item>
+    <ion-fab bottom right *ngIf="runTimer && hasStarted && !hasFinished">
+      <button ion-fab (click)="pauseTimer()">
+    <ion-icon name="pause"></ion-icon>
+    </button>
+    </ion-fab>
+    <ion-fab bottom right *ngIf="!runTimer && hasStarted && !hasFinished">
+      <button ion-fab (click)="resumeTimer()">
+       <ion-icon name="play"></ion-icon>
+       </button>
+    </ion-fab>
+    <ion-fab bottom right *ngIf="!hasStarted">
+      <button ion-fab (click)="startTimer()" item-right>
+       <ion-icon name="play"></ion-icon>
+       </button>
+    </ion-fab>
+   </div>
+</ion-content>

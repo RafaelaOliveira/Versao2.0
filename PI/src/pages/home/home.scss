@@ -1,0 +1,30 @@
+    page-home {
+        ion-content{
+            background: #C9F1FD !important;
+            img{
+                margin:auto;
+                display:block;
+                width: 100px;
+                height:auto;
+                }
+            }
+            .name{
+                font-weight: bold;
+                text-align: center;
+                font-size:50px;
+                text-shadow: 3px 2px #99B7C0;
+            }
+            .botao{
+                padding-top:20px;
+            }
+            button.btn{
+                margin: auto;
+                display: block;
+                margin-bottom: 20px;
+                border-radius: 9px;
+                font-size: 15px;
+                font-weight:bold;
+                color:#FFF;
+            }
+    }
+
